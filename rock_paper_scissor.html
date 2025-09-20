@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock Paper Scissor</title>
+
+    <Style>
+      .B1{
+        background-color: tomato;
+        width: 60px;
+        height: 30px;
+        padding: 3px 4px;   
+
+      }
+      .B2{
+        background-color: greenyellow;
+        width: 60px;
+        height: 30px;
+        padding: 3px 4px ;
+
+      }
+      .B3{
+        background-color:antiquewhite;
+        width: 60px;
+        height: 30px;
+        padding: 3px 4px ;
+      }
+
+      .heading{
+
+         
+        border: 1px solid black ;
+        background-color: skyblue;
+        padding: 5px 10px;
+        text-align: center;
+        display: flex ,inline-block;
+        justify-content: center;
+         
+      }
+    </Style>
+  </head>
+
+  <body>
+    <div class="heading">
+    <h3 >Rock Paper Scissors</h3></div>
+    <br>
+
+    <button class="B1"
+      onclick="
+  
+    const random_Number=Math.random();
+    let result = ' ';
+    let computer_Move = '' ;
+
+
+if(random_Number>=0 && random_Number<1/3){
+  computer_Move = 'Rock';
+}else if(random_Number>=1/3 && random_Number<2/3)  {
+  computer_Move = 'Paper' ;
+} else if(random_Number>=2/3 && random_Number<1){
+    computer_Move = 'Scissors'};
+    console.log(computer_Move)
+
+    if(computer_Move === 'Rock'){
+      result = 'Tie ' ;
+    }else if (computer_Move === 'Paper'){
+      result = 'Lose';
+    }else if(computer_Move === 'Scissors'){
+      result = 'Win ' ;
+    }
+
+    alert (`You Choose Rock and the Computer Choose ${computer_Move} So The game ${result} `);">
+      Rock
+    </button>
+
+    <button class="B2"
+      onclick="
+           random_Number=Math.random();
+           result = ' ';
+      if(random_Number>=0 && random_Number<1/3){
+        computer_Move ='Rock' ;
+      }else if (random_Number>=1/3 && random_Number<2/3){
+        computer_Move ='Paper' ;
+      }else if (random_Number>=2/3 && random_Number<1){
+        computer_Move='Scissors' ;
+      }
+
+      if(computer_Move === 'Rock'){
+       result = 'Win' ;
+      }else if (computer_Move==='Paper'){
+        result = 'Tie';
+      }else if (computer_Move==='Scissors'){
+        result = 'Lose ';
+      }
+          alert (`You Choose Paper and the Computer Choose ${computer_Move} So The game ${result} `);">
+      Paper
+    </button>
+
+    <button class="B3"
+      onclick="
+           random_Number=Math.random();
+     result = ' ';
+      if(random_Number>=0 && random_Number<1/3){
+        computer_Move='Rock' ;
+      }else if (random_Number>=1/3 && random_Number<2/3){
+        computer_Move ='Paper' ;
+      }else if (random_Number>=2/3 && random_Number<1 ){
+        computer_Move = 'Scissors';
+      }
+
+      if(computer_Move==='Rock'){
+        result = 'Lose ';
+      }else if (computer_Move==='Paper'){
+        result = 'Win ';
+      }else if (computer_Move==='Scissors'){
+        result = 'Tie ';
+      }
+        alert (`You Choose Scissors and the Computer Choose ${computer_Move} So The game ${result} `);">
+
+      Scissors
+
+    </button>
+
+    <script></script>
+  </body>
+</html>
